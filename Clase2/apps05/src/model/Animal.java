@@ -25,7 +25,8 @@ public class Animal {
         System.out.println(sonido);
     }
     
-    public void setSonido(String sonido) {
+    // Será usado solamente por sus descendientes
+    protected void setSonido(String sonido) {
         this.sonido = sonido;
     }
 }

@@ -10,6 +10,6 @@ public class Perro extends Animal { // La clase Perro es hijo de Animal
     public Perro(String nombrePropio, String nombre) {
         super(nombre);
         this.nombrePropio = nombrePropio;
-        this.setSonido(nombrePropio + " ladra");
+        this.setSonido(nombrePropio + " ladra"); // una regla para esta clase
     }
 }
