@@ -1,0 +1,16 @@
+   Practica dirigida
+   -----------------
+
+
+
+1. Crear una clase llamada Calculadora que tenga los métodos
+   suma, resta, multiplicación y división, [en la división
+   debe usar una excepción para controlar la división por
+   cero]. Debe crear la clase ejecutadora Main para probar
+   con objetos de Calculadora:
+
+   Calculadora cal = new Calculadora();
+
+   System.out.println("Suma :"+ cal.suma(45, 3.65));
+   System.out.println("Multiplicacion :"+ cal.multiplicacion(2, 6));
+   System.out.println("División :"+ cal.division(15, 0));

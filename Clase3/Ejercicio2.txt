@@ -1,0 +1,46 @@
+                 Practica dirigida
+
+2. Una nueva empresa llamada UVER requiere un sistema
+   para gestionar el transporte de personas. Para ello
+   tiene que manejar personas, conductores, pasajeros,
+   vehículos, viajes. Para ello las personas se deben
+   registrar por una sola vez, de ellas se debe extender
+   los conductores y pasajeros, que tambien se deben 
+   registrar por una sola vez, los vehículos también se
+   registran por única vez. Cada viaje debe registrar
+   vehiculo, conductor, pasajero, lugar de origen, lugar
+   de destino, fecha hora en origen, fecha hora en
+   destino, costo, estado de viaje terminado.
+   En todas las entidades debe considerar sus claves
+   correspondientes para poder identificarlas.
+   Debe haber una clase Main para poder probar el 
+   sistema.
+
+   En Main debe haber algo así:
+   ------------------------------------------------
+   // DNI, nombres   
+   Persona p1 = new Persona("10203040", "Abel Abad");
+   Persona p2 = new Persona("20304050", "Ana Arias");
+   Persona p3 = new Persona("30405060", "Eliza Alva");
+
+   // nro placa, marca, color, cantidad de pasajeros
+   Vehiculo v1 = new Vehiculo("ABC-100","Toyota","Verde", 4);
+   Vehiculo v2 = new Vehiculo("BCD-200","Ford","Blanco", 10);
+
+   // persona, categoría, fecha de emisión, estado vigente
+   Conductor c1 = new Conductor(p1, "A-II", "09/10/2019", "Si");
+
+   // El nro de licencia es la letra "Q" concatenado con
+   // el número de DNI
+   System.out.println(c1.getNroLicencia()); // muestra "Q10203040"
+
+   // Para verificar la vigencia de la licencia:
+   System.out.println(c1.getEsVigente()); // true
+
+   // persona, fecha de registro, estado vigente
+   Pasajero pas1 = new Pasajero(p2, "05/05/2023", "Si");
+
+   // en viaje considere el/los constructor/res necesario/s
+   // Esta instancia solo permite conductor y pasajero con estado
+   // vigente
+   Viaje v1 = new Viaje(...)
