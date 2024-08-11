@@ -9,6 +9,7 @@ package model;
  * @author Alumno
  */
 public class Conductor extends Persona {
+    private String nro_licencia;
     private String categoria;
     private String fec_emision;
     private boolean estado_vigente;
@@ -22,6 +23,7 @@ public class Conductor extends Persona {
         } else {
             this.estado_vigente = false;
         }
+        this.nro_licencia = "Q" + persona.getDNI();
     }
 
     public String getCategoria() {
@@ -50,5 +52,19 @@ public class Conductor extends Persona {
         this.estado_vigente = estado_vigente.equals("Si");
     }
     
+    public void mostrar() {
+        super.mostrar(); // muestra datos de persona
+        System.out.println("Categoria        : " + categoria);
+        System.out.println("Fecha de emision : " + fec_emision);
+        if(this.estado_vigente == true) {
+            System.out.println("Estado vigente   : Si");
+        } else {
+            System.out.println("Estado vigente   : No");
+        }
+    }
     
+    public String getNroLicencia() {
+        return nro_licencia;
+    }
+
 }
