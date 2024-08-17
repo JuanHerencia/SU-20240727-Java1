@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Curso
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Curso\ here.\r\n\ \r\n\ @author\ Juan\ Herencia\r\n\ @version\ 13/08/2024\r\n
+comment1.params=cod_curso\ nombre
+comment1.target=Curso(int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+numComments=3

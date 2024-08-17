@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=HorarioCurso
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ HorarioCurso\ here.\r\n\ \r\n\ @author\ Juan\ Herencia\r\n\ @version\ 13/08/2024\r\n
+comment1.params=curso\ docente
+comment1.target=HorarioCurso(Curso,\ Docente)
+comment2.params=dia\ hora
+comment2.target=void\ addDiaHora(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ show()
+numComments=4
